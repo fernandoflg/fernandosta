@@ -1,0 +1,14 @@
+http://tutoriales.stock-zero.com/2014/05/javafx-y-jpa-problemas.html
+Este molesto error no permite la compilación normal de la aplicación y, por lo tanto, no nos deja ni ejecutar la aplicacion javaFX (que previo a JPA si se ejecutaba) ni mucho menos ver la creación de las entidades en la base de datos (objetivo de agregar el soporte JPA), sin embargo resulta que es relativamente simple de solucionar, lo primero es buscar el archivo project.properties en la carpeta nbproject del proyecto (<<ruta del proyecto>>/nbproject/project.properties, abran dicho archivo en algún editor de texto y luego ubiquen el siguiente contenido:
+javac.processorpath=\
+    ${javac.classpath}:\
+    ${libs.eclipselinkmodelgen.classpath}
+
+Dicho contenido debe ser cambiado para finalmente lucir como sigue:
+
+
+javac.processorpath=\
+
+    ${javac.classpath}
+    
+    jpa javafx problemas

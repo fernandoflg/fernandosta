@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="775.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_jpa.JpaController">
+   <children>
+      <ToolBar layoutX="20.0" layoutY="33.0" prefHeight="75.0" prefWidth="926.0">
+         <items>
+            <Button mnemonicParsing="false" onMouseClicked="#Anteriorregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/Anterior.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Siguienteregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/Siguiente.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Primerregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/Primero.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Ultimoregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/Ultimo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Nuevoregistro">
+                <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/nueva.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Grabaregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/insertar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Eliminaregistro">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/borrar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/buscar.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#VisualizaRejilla">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/tabla.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/refrescar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </items>
+      </ToolBar>
+      <Pane layoutX="340.0" layoutY="127.0" prefHeight="507.0" prefWidth="608.0" style="-fx-background-color: RGB(102,204,0);">
+         <children>
+            <TextField fx:id="cidedificio" layoutX="21.0" layoutY="31.0" prefHeight="25.0" prefWidth="114.0">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="cpresidente" layoutX="21.0" layoutY="67.0" prefHeight="25.0" prefWidth="520.0" />
+            <TextField fx:id="ctelefonopresidente" layoutX="21.0" layoutY="107.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="csecretario" layoutX="21.0" layoutY="147.0" prefHeight="25.0" prefWidth="520.0" />
+            <TextField fx:id="ctelefonosecretario" layoutX="21.0" layoutY="194.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField fx:id="cdireccion" layoutX="21.0" layoutY="229.0" prefHeight="25.0" prefWidth="520.0" />
+            <TextField fx:id="cpoblacion" layoutX="21.0" layoutY="271.0" prefHeight="25.0" prefWidth="520.0" />
+            <TextField fx:id="cprovincia" layoutX="21.0" layoutY="313.0" prefHeight="25.0" prefWidth="354.0" />
+            <TextField fx:id="ccodigopostal" layoutX="21.0" layoutY="360.0" prefHeight="25.0" prefWidth="105.0">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="cemail" layoutX="21.0" layoutY="413.0" prefHeight="25.0" prefWidth="572.0" />
+            <TextField fx:id="ccuota" layoutX="21.0" layoutY="458.0" prefHeight="25.0" prefWidth="105.0">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="127.0" prefHeight="507.0" prefWidth="297.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="41.0" layoutY="36.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Id Edificio" />
+            <Label layoutX="41.0" layoutY="78.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Presidente" />
+            <Label layoutX="41.0" layoutY="115.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Telefono Presidente" />
+            <Label layoutX="41.0" layoutY="157.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Secretario" />
+            <Label layoutX="41.0" layoutY="201.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Teléfono Secretario" />
+            <Label layoutX="41.0" layoutY="237.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Dirección" />
+            <Label layoutX="41.0" layoutY="275.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Población" />
+            <Label layoutX="41.0" layoutY="455.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Cuota" />
+            <Label layoutX="41.0" layoutY="410.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Email" />
+            <Label layoutX="41.0" layoutY="361.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="CP" />
+            <Label layoutX="41.0" layoutY="316.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: white;" text="Provincia" />
+         </children>
+      </Pane>
+      <TableView fx:id="TablaRegistros" layoutX="20.0" layoutY="647.0" onMouseClicked="#FilaRejilla" prefHeight="125.0" prefWidth="926.0" />
+   </children>
+</AnchorPane>
